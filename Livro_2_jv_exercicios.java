@@ -219,10 +219,10 @@ public class Livro_2_jv_exercicios {
         
         System.out.println("Primer examen...");
         int nota1 = scan.nextInt();
-        System.out.println(" Nota que quieres sacar en el 2do examen ??");
+        System.out.println("¿Qué nota quieres sacar en el trimestre?");
         int nota2 = scan.nextInt();
-        System.out.println("kb en mb..." + ( kb / 1000) + "mb");
-
+      float ciemp = (nota2 - (nota1 * 0.40f) / 0.60f);
+        System.out.println("resultado" + ciemp);
     }
 
     public static void main(String[] args) {

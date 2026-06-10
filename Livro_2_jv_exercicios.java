@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 public class Livro_2_jv_exercicios {
 
-    static void SalidaDatos(){
+    static void SalidaDatos() {
 
         // System.out.println("Hello world!!");
         // System.out.println("\033[37m sabanas !!");
@@ -15,9 +17,9 @@ public class Livro_2_jv_exercicios {
         // System.out.println("\u266B 2 Corchea!!");
 
         // System.out.printf("El numero %d no tiene decimales.", 21);
-        // System.out.println("\n  ");
+        // System.out.println("\n ");
         // System.out.printf("El numero %f sale con decimales.", 21.0);
-        // System.out.println("\n  ");
+        // System.out.println("\n ");
         // System.out.printf("El numero %.3f sale exactamento con 3 decimales.", 21.0);
         // System.out.println("\n ");
         // System.out.printf("La cadena de letras es %s \n", "Asi");
@@ -27,51 +29,51 @@ public class Livro_2_jv_exercicios {
         // double Num = 4898868.2954;
         // System.out.printf("Hola soy \033[36m%s \n", "Cesar..!!");
         // System.out.print("\n");
-        // System.out.printf("\033[30m Vivo en %s \n mi numero es %.4f ", "Brasil, palhoca, Guarda de cubatao", Num);
+        // System.out.printf("\033[30m Vivo en %s \n mi numero es %.4f ", "Brasil,
+        // palhoca, Guarda de cubatao", Num);
         // System.out.println("\n\n\n\n\n");
         // System.out.println(" __________________________");
-        // System.out.println(" * Ingles     -  spanish  *");
-        // System.out.println(" 1. Computer  - Computadora");
-        // System.out.println(" 2. Student   - Estudiante ");
-        // System.out.println(" 3. Cat       - Gato       ");
-        // System.out.println(" 4. Dog       - Perro      ");
-        // System.out.println(" 5. Penguin   - Pinguino   ");
-        // System.out.println(" 6. Telephone - Telefono   ");
-        // System.out.println(" 7. Box       - Caja       ");
-        // System.out.println(" 8. Circle    - Circulo    ");
-        // System.out.println(" 9. Tree      - Arbol      ");
-        // System.out.println(" 10. Black    - Negro      ");
+        // System.out.println(" * Ingles - spanish *");
+        // System.out.println(" 1. Computer - Computadora");
+        // System.out.println(" 2. Student - Estudiante ");
+        // System.out.println(" 3. Cat - Gato ");
+        // System.out.println(" 4. Dog - Perro ");
+        // System.out.println(" 5. Penguin - Pinguino ");
+        // System.out.println(" 6. Telephone - Telefono ");
+        // System.out.println(" 7. Box - Caja ");
+        // System.out.println(" 8. Circle - Circulo ");
+        // System.out.println(" 9. Tree - Arbol ");
+        // System.out.println(" 10. Black - Negro ");
 
-        // System.out.println("Desde las \033[31m06:00 A.M\033[30m hasta las \033[31m11:00 P.M");
-        
-        
+        // System.out.println("Desde las \033[31m06:00 A.M\033[30m hasta las
+        // \033[31m11:00 P.M");
+
         // System.out.println("\033[30m \n");
-        // System.out.println("    *    ");
-        // System.out.println("   ***   ");
-        // System.out.println("  *****  ");
+        // System.out.println(" * ");
+        // System.out.println(" *** ");
+        // System.out.println(" ***** ");
         // System.out.println(" ******* ");
         // System.out.println("*********\n");
 
-        // System.out.println("    *    ");
-        // System.out.println("   * *   ");
-        // System.out.println("  *   *  ");
-        // System.out.println(" *     * ");
+        // System.out.println(" * ");
+        // System.out.println(" * * ");
+        // System.out.println(" * * ");
+        // System.out.println(" * * ");
         // System.out.println("*********\n");
-        
+
         // System.out.println("*********");
-        // System.out.println(" *     * ");
-        // System.out.println("  *   *  ");
-        // System.out.println("   * *   ");
-        // System.out.println("    *  \n");
-        
-        
+        // System.out.println(" * * ");
+        // System.out.println(" * * ");
+        // System.out.println(" * * ");
+        // System.out.println(" * \n");
+
         // System.out.print("\033[30m");
         // System.out.print("\n___________");
-        // System.out.print("\n|   _______\\");
-        // System.out.print("\n|   |     | \\");
+        // System.out.print("\n| _______\\");
+        // System.out.print("\n| | | \\");
         // System.out.print("\n\033[36m|___|_____|__\\_________");
-        // System.out.print("\n|   |     |            |");
-        // System.out.print("\n|   |_____|            |");
+        // System.out.print("\n| | | |");
+        // System.out.print("\n| |_____| |");
         // System.out.print("\n|______________________|");
 
         // byte a = 'a';
@@ -80,43 +82,147 @@ public class Livro_2_jv_exercicios {
         // byte d = 'z';
 
         // System.out.print(" a + b + c + d: " + a + b + c + d);
-      // int x = 144, y = 999;
+        // int x = 144, y = 999;
 
-      // System.out.println(x + y);
-      // System.out.println(x - y);
-      // System.out.println(x * y);
-      // System.out.println(x / y);
+        // System.out.println(x + y);
+        // System.out.println(x - y);
+        // System.out.println(x * y);
+        // System.out.println(x / y);
 
-      // String nombre = "Cesar";
-      // String direccion = "Rua servidao Medeiros";
-      // long numero = 48988682954l;
-      // System.out.println("mi nombre es: " + nombre + "\n Vivo en: " + direccion + "\n y mi numero: " + numero);
+        // String nombre = "Cesar";
+        // String direccion = "Rua servidao Medeiros";
+        // long numero = 48988682954l;
+        // System.out.println("mi nombre es: " + nombre + "\n Vivo en: " + direccion +
+        // "\n y mi numero: " + numero);
 
-      // euros ==> pesetas
-      // int euros = 10;
-      // double pesetas = 166.386;
-      // float resultado = euros * pesetas;
-      // System.out.println("resultado de " + resultado);
+        // euros ==> pesetas
+        // int euros = 10;
+        // double pesetas = 166.386;
+        // float resultado = euros * pesetas;
+        // System.out.println("resultado de " + resultado);
 
-      //pesetas ==> euros
-      // double pesetas = 10.00;
-      // float euros = 0.006f;
-      // float resultado = pesetas * euros;
-      // System.out.println( pesetas * euros );
+        // pesetas ==> euros
+        // double pesetas = 10.00;
+        // float euros = 0.006f;
+        // float resultado = pesetas * euros;
+        // System.out.println( pesetas * euros );
 
+        // String enunciado = "mi nombre es cesa";
+        // char complemento = 'R';
+        // System.out.println(enunciado + complemento);
 
-      // String enunciado = "mi nombre es cesa";
-      // char complemento = 'R';
-      // System.out.println(enunciado + complemento);
+        // char a = 'c';
+        // char b = 'e';
+        // char c = 's';
+        // char d = 'a';
+        // char e = 'r';
 
-      char a = 'c';
-      char b = 'e';
-      char c = 's';
-      char d = 'a';
-      char e = 'r';
-      
-      String conjunto = String.;
-      System.out.println(conjunto);
+        // String conjunto = String.valueOf(a) + String.valueOf(b) + String.valueOf(c) +
+        // String.valueOf(d) + String.valueOf(e) ;
+        // System.out.println(conjunto);
+        // Scanner s = new Scanner(System.in);
+
+        // String LeerScanner = s.nextLine();
+        // String LeerSistem = System.console().readLine();
+
+        // Scanner s = new Scanner(System.in);
+
+        // System.out.println("Primer numero!!");
+        // int primer_num = s.nextInt();
+
+        // System.out.println("Segundo numero!!");
+        // int segun_num = s.nextInt();
+
+        // System.out.println("Resultado: " + primer_num * segun_num);
+
+        // Scanner scan = new Scanner(System.in);
+
+        // System.out.println("Cantidad de Euros...");
+        // int euros_num = scan.nextInt();
+        // System.out.println("Cantidad de Pesetas...\n" + euros_num * 166.386);
+
+        // Scanner scan = new Scanner(System.in);
+
+        // System.out.println("Cantidad de pesetas...");
+        // int pesetas_num = scan.nextInt();
+        // System.out.println("Cantidad de Euros...\n" + pesetas_num * 0.006f);
+
+        // Scanner scan = new Scanner(System.in);
+
+        // System.out.println("Primer numero...");
+        // int primer_num = scan.nextInt();
+
+        // System.out.println("Segundo numero...");
+        // int segundo_num = scan.nextInt();
+        // System.out.println("Suma:\n+" + (primer_num + segundo_num));
+        // System.out.println("Resta:\n-" + (primer_num - segundo_num));
+        // System.out.println("Multiplicacion:\nX" + (primer_num * segundo_num));
+        // System.out.println("Division:\n/" + (primer_num / segundo_num));
+
+        // Scanner scan = new Scanner(System.in);
+
+        // System.out.println("Primer numero...");
+        // int base = scan.nextInt();
+
+        // System.out.println("Segundo numero...");
+        // int altura = scan.nextInt();
+
+        // System.out.println("La area del rectangulo es:" + (base * altura));
+
+        // Scanner scan = new Scanner(System.in);
+
+        // System.out.println("Primer numero...");
+        // int base = scan.nextInt();
+
+        // System.out.println("Segundo numero...");
+        // int altura = scan.nextInt();
+
+        // System.out.println("La area del rectangulo es:" + (base * altura) / 2);
+
+        // Scanner scan = new Scanner(System.in);
+
+        // System.out.println("Valor normal...");
+        // float Valor_normal = scan.nextFloat();
+
+        // float imponible = Valor_normal * 1.21f;
+
+        // System.out.println("Resultado... " + (imponible));
+
+        // Scanner scan = new Scanner(System.in);
+
+        // System.out.println("Horas trabajadas...");
+        // int hrsTrabajadas = scan.nextInt();
+        
+        // System.out.println("Segundo numero..." + (12 * hrsTrabajadas));
+        
+        // Scanner scan = new Scanner(System.in);
+        
+        // System.out.println("Radio...");
+        // int radio = scan.nextInt();
+        // System.out.println("height...");
+        // int height = scan.nextInt();
+        // System.out.println("El volumen del cono:\n" + (Math.PI * (radio * radio) * height )/ 3);
+
+        // Scanner scan = new Scanner(System.in);
+        
+        // System.out.println("MB...");
+        // int mb = scan.nextInt();
+        // System.out.println("mb en kb..." + ( mb * 1000) + "kb");
+        
+        // Scanner scan = new Scanner(System.in);
+        
+        // System.out.println("KB...");
+        // int kb = scan.nextInt();
+        // System.out.println("kb en mb..." + ( kb / 1000) + "mb");
+        
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.println("Primer examen...");
+        int nota1 = scan.nextInt();
+        System.out.println(" Nota que quieres sacar en el 2do examen ??");
+        int nota2 = scan.nextInt();
+        System.out.println("kb en mb..." + ( kb / 1000) + "mb");
+
     }
 
     public static void main(String[] args) {

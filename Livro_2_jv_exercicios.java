@@ -299,18 +299,18 @@ public class Livro_2_jv_exercicios {
 
 
 
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Usando la formula ax + b = 0");
-        System.out.println("di el numer 'A' ");
-        float a = scan.nextFloat();
+        // Scanner scan = new Scanner(System.in);
+        // System.out.println("Usando la formula ax + b = 0");
+        // System.out.println("di el numer 'A' ");
+        // float a = scan.nextFloat();
 
-        System.out.println("di el numer 'B' ");
-        float b = scan.nextFloat();
+        // System.out.println("di el numer 'B' ");
+        // float b = scan.nextFloat();
 
-        float resposta = 0 - b;
-        float respostaFinal = resposta / a;
+        // float resposta = 0 - b;
+        // float respostaFinal = resposta / a;
 
-        System.out.println("entoces: \nx = " + (respostaFinal));
+        // System.out.println("entoces: \nx = " + (respostaFinal));
 
 
         // Scanner scanner = new Scanner(System.in);
@@ -323,16 +323,27 @@ public class Livro_2_jv_exercicios {
 
 
 
-        // Scanner scan = new Scanner(System.in );
-        // System.out.println("primeiro numero??");
-        // int nt1 = scan.nextInt();
-        // System.out.println("Segundo numero??");
-        // int nt2 = scan.nextInt();
-        // System.out.println("tercer numero??");
-        // int nt3 = scan.nextInt();
-        // int resultado = nt1 + nt2 +nt3;
-        // System.out.println("resultado: " + resultado);
-        // System.out.println("RESULTADO FINAL:\n" + (resultado / 3));
+        Scanner scan = new Scanner(System.in );
+        System.out.println("primeiro numero??");
+        int nt1 = scan.nextInt();
+        System.out.println("Segundo numero??");
+        int nt2 = scan.nextInt();
+        System.out.println("tercer numero??");
+        int nt3 = scan.nextInt();
+        int resultado = nt1 + nt2 +nt3;
+        System.out.println("resultado: " + resultado);
+        if (resultado <= 2) {
+            System.out.println("Nota insuficiente");
+        }else if (resultado <= 4) {
+            System.out.println("suficiente");
+        }else if (resultado <= 6) {
+            System.out.println("bien");
+        }else if (resultado <= 8) {
+            System.out.println("notable");
+        }else if (resultado <= 10) {
+            System.out.println("Sobresaliente");
+        }
+        System.out.println("RESULTADO FINAL:\n" + (resultado / 3));
     }
 
     public static void main(String[] args) {

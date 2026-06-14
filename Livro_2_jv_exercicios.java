@@ -708,30 +708,95 @@ public class Livro_2_jv_exercicios {
         // final int min_semana = scanner.nextInt();
 
         // switch (dia_semana) {
-        //     case "lunes":
-        //         System.out.println("Te faltan 4 dias, " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
+        // case "lunes":
+        // System.out.println("Te faltan 4 dias, " + (hr_semana - 15) + " hr y " +
+        // (min_semana - 60) + " m ");
+        // break;
+        // case "martes":
+        // System.out.println("Te faltan 3 dias, " + (hr_semana - 15) + " hr y " +
+        // (min_semana - 60) + " m ");
+
+        // break;
+        // case "miercoles":
+        // System.out.println("Te faltan 2 dias, " + (hr_semana - 15) + " hr y " +
+        // (min_semana - 60) + " m ");
+
+        // break;
+        // case "jueves":
+
+        // System.out.println("Te faltan 1 dias, " + (hr_semana - 15) + " hr y " +
+        // (min_semana - 60) + " m ");
+        // break;
+        // case "viernes":
+        // System.out.println("Te faltan " + (hr_semana - 15) + " hr y " + (min_semana -
+        // 60) + " m ");
+        // break;
+        // default:
+        // System.out.println("Valor invalido");
+        // break;
+        // }
+
+        // scanner.close();
+
+        float iva = 0;
+        float promo = 0;
+        // float res = 0;
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("base inponible ");
+        final float base = scanner.nextFloat();
+
+        System.out.println("introduzca el I.V.A ");
+        final String ivaTipo = scanner.nextLine();
+
+        // System.out.println("introduzca el codigo promocional");
+        // final String promoTipo = scanner.nextLine();
+
+        switch (ivaTipo) {
+            case "general":
+                iva = 0.21f;
+                break;
+            case "reducido":
+                iva = 0.10f;
+
+                break;
+            case "superreducido":
+                iva = 0.04f;
+
+                break;
+
+            default:
+                System.out.println("Iva invalido");
+                break;
+        }
+        // switch (promoTipo) {
+        //     case "no_promo":
+        //         promo = 0f;
         //         break;
-        //     case "martes":
-        //         System.out.println("Te faltan 3 dias, " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
+        //     case "mitad":
+        //         promo = 0.5f;
 
         //         break;
-        //     case "miercoles":
-        //         System.out.println("Te faltan 2 dias, " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
+        //     case "meno5":
+        //         promo = 5f; // hay qu restarlo no se te olvide
 
         //         break;
-        //     case "jueves":
+        //     case "5porc":
+        //         promo = 0.05f;
 
-        //         System.out.println("Te faltan 1 dias, " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
         //         break;
-        //     case "viernes":
-        //         System.out.println("Te faltan " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
-        //         break;
-        //         default:
+
+        //     default:
         //         System.out.println("Valor invalido");
         //         break;
         // }
 
-        // scanner.close();
+        System.out.println("La base imponible:  " + base);
+        System.out.println("Iva (" + iva * 100 + "%):    " + base * iva);
+        System.out.println("Precio con Iva (" + iva * 100 + "%):     " + base * (iva + 1.00));
+        //System.out.println("cod. promo. (" + promoTipo + "):    " + base * promo);
+
+        scanner.close();
     }
 
     public static void main(String[] args) {

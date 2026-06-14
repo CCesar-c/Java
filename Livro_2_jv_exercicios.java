@@ -696,42 +696,42 @@ public class Livro_2_jv_exercicios {
         // }
         // scanner.close();
 
-        Scanner scanner = new Scanner(System.in);
+        // Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Que dia de la semana estas ??");
-        final String dia_semana = scanner.nextLine();
+        // System.out.println("Que dia de la semana estas ??");
+        // final String dia_semana = scanner.nextLine();
 
-        System.out.println("Que horas son ??");
-        final int hr_semana = scanner.nextInt();
+        // System.out.println("Que horas son ??");
+        // final int hr_semana = scanner.nextInt();
 
-        System.out.println("Que minutos son ??");
-        final int min_semana = scanner.nextInt();
+        // System.out.println("Que minutos son ??");
+        // final int min_semana = scanner.nextInt();
 
-        switch (dia_semana) {
-            case "lunes":
-                System.out.println("Te faltan 4 dias, " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
-                break;
-            case "martes":
-                System.out.println("Te faltan 3 dias, " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
+        // switch (dia_semana) {
+        //     case "lunes":
+        //         System.out.println("Te faltan 4 dias, " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
+        //         break;
+        //     case "martes":
+        //         System.out.println("Te faltan 3 dias, " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
 
-                break;
-            case "miercoles":
-                System.out.println("Te faltan 2 dias, " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
+        //         break;
+        //     case "miercoles":
+        //         System.out.println("Te faltan 2 dias, " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
 
-                break;
-            case "jueves":
+        //         break;
+        //     case "jueves":
 
-                System.out.println("Te faltan 1 dias, " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
-                break;
-            case "viernes":
-                System.out.println("Te faltan " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
-                break;
-                default:
-                System.out.println("Valor invalido");
-                break;
-        }
+        //         System.out.println("Te faltan 1 dias, " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
+        //         break;
+        //     case "viernes":
+        //         System.out.println("Te faltan " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
+        //         break;
+        //         default:
+        //         System.out.println("Valor invalido");
+        //         break;
+        // }
 
-        scanner.close();
+        // scanner.close();
     }
 
     public static void main(String[] args) {

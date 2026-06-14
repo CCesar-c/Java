@@ -1,3 +1,7 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class Livro_2_jv_exercicios {
@@ -297,8 +301,6 @@ public class Livro_2_jv_exercicios {
         // System.out.println("Tu salario es de: " +(hrsTrabajadas * 12));
         // }
 
-
-
         // Scanner scan = new Scanner(System.in);
         // System.out.println("Usando la formula ax + b = 0");
         // System.out.println("di el numer 'A' ");
@@ -312,38 +314,424 @@ public class Livro_2_jv_exercicios {
 
         // System.out.println("entoces: \nx = " + (respostaFinal));
 
-
         // Scanner scanner = new Scanner(System.in);
 
         // System.out.println("La altura del objeto");
         // float height = scanner.nextFloat();
         // float res = height / 9.81f;
-        
+
         // System.out.println("Respuesta:\n" + (Math.sqrt(res)));
 
+        // Scanner scan = new Scanner(System.in );
+        // System.out.println("primeiro numero??");
+        // int nt1 = scan.nextInt();
+        // System.out.println("Segundo numero??");
+        // int nt2 = scan.nextInt();
+        // System.out.println("tercer numero??");
+        // int nt3 = scan.nextInt();
 
+        // int resultado = (nt1 + nt2 + nt3) / 3;
+        // System.out.println(resultado);
 
-        Scanner scan = new Scanner(System.in );
-        System.out.println("primeiro numero??");
-        int nt1 = scan.nextInt();
-        System.out.println("Segundo numero??");
-        int nt2 = scan.nextInt();
-        System.out.println("tercer numero??");
-        int nt3 = scan.nextInt();
-        int resultado = nt1 + nt2 +nt3;
-        System.out.println("resultado: " + resultado);
-        if (resultado <= 2) {
-            System.out.println("Nota insuficiente");
-        }else if (resultado <= 4) {
-            System.out.println("suficiente");
-        }else if (resultado <= 6) {
-            System.out.println("bien");
-        }else if (resultado <= 8) {
-            System.out.println("notable");
-        }else if (resultado <= 10) {
-            System.out.println("Sobresaliente");
+        // if ( resultado > 0 && resultado <= 2 ) {
+        // System.out.println("Nota insuficiente:\n" + resultado);
+        // }else if ( resultado > 2 && resultado <= 4 ) {
+        // System.out.println("Nota suficiente:\n" + resultado);
+        // }else if ( resultado > 4 && resultado <= 6 ) {
+        // System.out.println("Nota bien:\n" + resultado);
+        // }else if ( resultado > 6 && resultado <= 8 ) {
+        // System.out.println("Nota notable:\n" + resultado);
+        // }else if ( resultado > 8 && resultado <= 10 ) {
+        // System.out.println("Nota sobresaliente:\n" + resultado);
+        // }else{
+        // System.out.println("Nota Invalida:\n" + resultado);
+        // }
+
+        // System.out.println("Usando la formula ax² + bx + c = 0 ");
+
+        // System.out.println("a = ? ");
+        // int a = Integer.parseInt(System.console().readLine());
+
+        // System.out.println("b = ? ");
+        // int b = Integer.parseInt(System.console().readLine());
+
+        // System.out.println("c = ? ");
+        // int c = Integer.parseInt(System.console().readLine());
+
+        // double Calculo_1 = (b * b) - 4f * a * c;
+        // double Calculo_2 = Math.sqrt(Calculo_1);
+        // double CalculoMas = (-b + Calculo_2) / 2;
+        // double CalculoMenos = (-b - Calculo_2) / 2;
+        // System.out.println("Resultado x¹: " + CalculoMas);
+        // System.out.println("Resultado x²: " + CalculoMenos);
+
+        // int dia = Integer.parseInt(System.console().readLine());
+        // int mes = Integer.parseInt(System.console().readLine());
+
+        // if (dia == 30 && mes == 3) {
+        // System.out.println("seras el mejor programador con Practica.\nque tu creias
+        // que la vida es un morango");
+        // }
+
+        // int hrs = Integer.parseInt(System.console().readLine());
+        // int min = Integer.parseInt(System.console().readLine());
+
+        // int media_noche_hrs = 23;
+        // int media_noche_min = 60;
+
+        // final String resultado = "Faltan " + (media_noche_hrs - hrs) + " Horas " +
+        // ((media_noche_min - min) == 0 ? "":"y " +(media_noche_min - min) );
+        // System.out.println(resultado);
+
+        // int resposta, pts = 0;
+        // System.out.println(" 1 + 1");
+        // resposta = Integer.parseInt(System.console().readLine());
+
+        // if (resposta == 2) {
+        // System.out.println(" certo");
+        // pts++;
+
+        // } else {
+        // System.out.println(" errado");
+        // }
+
+        // System.out.println(" 1 + 2");
+        // resposta = Integer.parseInt(System.console().readLine());
+        // if (resposta == 3) {
+        // System.out.println(" certo");
+        // pts++;
+        // } else {
+        // System.out.println(" errado");
+        // }
+
+        // System.out.println(" 1 + 3");
+        // resposta = Integer.parseInt(System.console().readLine());
+        // if (resposta == 4) {
+        // System.out.println(" certo");
+        // pts++;
+        // } else {
+        // System.out.println(" errado");
+        // }
+
+        // System.out.println(" 1 + 4");
+        // resposta = Integer.parseInt(System.console().readLine());
+        // if (resposta == 5) {
+        // System.out.println(" certo");
+        // pts++;
+        // } else {
+        // System.out.println(" errado");
+        // }
+
+        // System.out.println(" 1 + 5");
+        // resposta = Integer.parseInt(System.console().readLine());
+        // if (resposta == 6) {
+        // System.out.println(" certo");
+        // pts++;
+        // } else {
+        // System.out.println(" errado");
+        // }
+
+        // System.out.println(" 1 + 6");
+        // resposta = Integer.parseInt(System.console().readLine());
+        // if (resposta == 7) {
+        // System.out.println(" certo");
+        // pts++;
+        // } else {
+        // System.out.println(" errado");
+        // }
+
+        // System.out.println(" 1 + 7");
+        // resposta = Integer.parseInt(System.console().readLine());
+        // if (resposta == 8) {
+        // System.out.println(" certo");
+        // pts++;
+        // } else {
+        // System.out.println(" errado");
+        // }
+        // System.out.println(" 1 + 8");
+        // resposta = Integer.parseInt(System.console().readLine());
+        // if (resposta == 9) {
+        // System.out.println(" certo");
+        // pts++;
+        // } else {
+        // System.out.println(" errado");
+        // }
+        // System.out.println(" 1 + 9");
+        // resposta = Integer.parseInt(System.console().readLine());
+        // if (resposta == 10) {
+        // System.out.println(" certo");
+        // pts++;
+        // } else {
+        // System.out.println(" errado");
+        // }
+        // System.out.println(" 1 + 10");
+        // resposta = Integer.parseInt(System.console().readLine());
+        // if (resposta == 11) {
+        // System.out.println(" certo");
+        // pts++;
+        // } else {
+        // System.out.println(" errado");
+        // }
+        // System.out.println("Resultado: " + pts + "pts");
+
+        // Scanner scanner = new Scanner(System.in);
+
+        // int Primer_num = scanner.nextInt();
+        // int Segundo_num = scanner.nextInt();
+        // int Tercer_num = scanner.nextInt();
+        // String res = new String();
+
+        // if (Primer_num > Segundo_num && Segundo_num > Tercer_num) {
+        // res = String.valueOf(Primer_num) + "-" + String.valueOf(Segundo_num) + "-" +
+        // String.valueOf(Tercer_num);
+        // } else if (Primer_num > Tercer_num && Tercer_num > Segundo_num) {
+        // res = String.valueOf(Primer_num) + "-" + String.valueOf(Tercer_num) + "-" +
+        // String.valueOf(Segundo_num);
+        // }
+
+        // else if (Segundo_num > Tercer_num && Tercer_num > Primer_num) {
+        // res = String.valueOf(Segundo_num) + "-" + String.valueOf(Tercer_num) + "-" +
+        // String.valueOf(Primer_num);
+        // } else if (Segundo_num > Primer_num && Primer_num > Tercer_num) {
+        // res = String.valueOf(Segundo_num) + "-" + String.valueOf(Primer_num) + "-" +
+        // String.valueOf(Tercer_num);
+        // }
+
+        // else if (Tercer_num > Primer_num && Primer_num > Segundo_num) {
+        // res = String.valueOf(Tercer_num) + "-" + String.valueOf(Primer_num) + "-" +
+        // String.valueOf(Segundo_num);
+        // } else if (Tercer_num > Segundo_num && Segundo_num > Primer_num) {
+        // res = String.valueOf(Tercer_num) + "-" + String.valueOf(Segundo_num) + "-" +
+        // String.valueOf(Primer_num);
+        // } else {
+        // res = "espera";
+        // }
+        // System.out.println("la oden es\n" + res);
+
+        // final float num = Integer.parseInt(System.console().readLine());
+        // if (num % 5 == 0) {
+        // System.out.println("Par: " + num);
+        // } else {
+        // System.out.println("\033[31mImpar: "+ num);
+        // }
+
+        // Scanner scanner = new Scanner(System.in);
+        // System.out.println("opcion (*, 1, c o x) ");
+        // String option = scanner.nextLine();
+
+        // System.out.println("Orientacion (arriba || abajo) ");
+        // String orinetacion = scanner.nextLine();
+
+        // // En java == sirve para hacer comparaciones Pero los
+        // // Strings pero en el operador == no compara
+        // // el contenido de las palabras, sino que mira si están guardadas
+        // // en el mismo lugar de la memoria.
+
+        // System.out.println(orinetacion.equals("arriba") ? "igual":"no es igual");
+        // System.out.println(orinetacion);
+
+        // switch (option) {
+        // case "*":
+        // if (orinetacion.equals("arriba")) {
+        // System.out.println(" * ");
+        // System.out.println(" *** ");
+        // System.out.println("*****");
+        // } else {
+        // System.out.println("*****");
+        // System.out.println(" *** ");
+        // System.out.println(" * ");
+        // }
+        // break;
+        // case "1":
+        // if (orinetacion.equals("arriba")) {
+        // System.out.println(" 1 ");
+        // System.out.println(" 111 ");
+        // System.out.println("11111");
+        // } else {
+        // System.out.println("11111");
+        // System.out.println(" 111 ");
+        // System.out.println(" 1 ");
+        // }
+        // break;
+
+        // case "c":
+        // if (orinetacion.equals("arriba")) {
+        // System.out.println(" c ");
+        // System.out.println(" ccc ");
+        // System.out.println("ccccc");
+        // } else {
+        // System.out.println("ccccc");
+        // System.out.println(" ccc ");
+        // System.out.println(" c ");
+        // }
+        // break;
+        // case "x":
+        // if (orinetacion.equals("arriba")) {
+        // System.out.println(" x ");
+        // System.out.println(" xxx ");
+        // System.out.println("xxxxx");
+        // } else {
+        // System.out.println("xxxxx");
+        // System.out.println(" xxx ");
+        // System.out.println(" x ");
+        // }
+        // break;
+
+        // default:
+        // System.out.println("no definido");
+        // break;
+
+        // }
+        // scanner.close(); // para liberar memoria..!! importante
+
+        // int pts = 0;
+        // boolean respuestas;
+
+        // System.out.println("Tu pareja esta inquieta");
+        // respuestas = Boolean.parseBoolean(System.console().readLine());
+        // if (respuestas) {
+        // pts += 3;
+        // }
+        // System.out.println("Tu pareja Sale mucho");
+        // respuestas = Boolean.parseBoolean(System.console().readLine());
+        // if (respuestas) {
+        // pts += 3;
+        // }
+        // System.out.println("Tu pareja se afeita para salir");
+        // respuestas = Boolean.parseBoolean(System.console().readLine());
+        // if (respuestas) {
+        // pts += 3;
+        // }
+        // System.out.println("Tu pareja se arragla el pelo para salir");
+        // respuestas = Boolean.parseBoolean(System.console().readLine());
+        // if (respuestas) {
+        // pts += 3;
+        // }
+        // System.out.println("Tu pareja se preocupa en tener su linea");
+        // respuestas = Boolean.parseBoolean(System.console().readLine());
+        // if (respuestas) {
+        // pts += 3;
+        // }
+        // System.out.println("Se echa mucho perfume para salir");
+        // respuestas = Boolean.parseBoolean(System.console().readLine());
+        // if (respuestas) {
+        // pts += 3;
+        // }
+        // System.out.println("Gasta mucho en vesturario");
+        // respuestas = Boolean.parseBoolean(System.console().readLine());
+        // if (respuestas) {
+        // pts += 3;
+        // }
+        // System.out.println("a perdido el interes en ti??");
+        // respuestas = Boolean.parseBoolean(System.console().readLine());
+        // if (respuestas) {
+        // pts += 3;
+        // }
+        // System.out.println("Da direcciones erradas de donde es ??");
+        // respuestas = Boolean.parseBoolean(System.console().readLine());
+        // if (respuestas) {
+        // pts += 3;
+        // }
+        // System.out.println("no suelta el celular");
+        // respuestas = Boolean.parseBoolean(System.console().readLine());
+        // if (respuestas) {
+        // pts += 3;
+        // }
+        // if (pts <= 10 ) {
+        // System.out.println("Es fiel");
+        // }else if (pts >= 11 && pts <= 22 ) {
+        // System.out.println("Ta raro");
+        // }else if (pts >= 23 ) {
+        // System.out.println("Ya valio");
+        // }
+
+        // String numero = System.console().readLine();
+        // String[] ultimoNum = numero.split("");
+        // System.out.println("El ultimo digito es: " + ultimoNum[ultimoNum.length -
+        // 1]);
+
+        // String numero = System.console().readLine();
+        // String[] primerNum = numero.split("");
+        // System.out.println("El ultimo digito es: " + primerNum[0]);
+
+        // String numero = System.console().readLine();
+        // String[] tamano = numero.split("");
+        // System.out.println("El ultimo digito es: " + tamano.length);
+
+        // String numero = System.console().readLine();
+        // String[] capicuaNum = numero.split("");
+        // String[] capicuaNumAsereversido = numero.split("");
+        // Collections.reverse(Arrays.asList(capicuaNumAsereversido));
+
+        // String juntoDerecho = String.join("", capicuaNum);
+        // String juntoAlreves = String.join("", capicuaNumAsereversido);
+
+        // System.out.println(juntoDerecho);
+        // System.out.println(juntoAlreves);
+        // if (juntoDerecho.equals(juntoAlreves)) {
+        // System.out.println("es un capicua");
+
+        // } else {
+        // System.out.println("Numero normal");
+
+        // }
+
+        // Scanner scanner = new Scanner(System.in);
+        // float primer_control = scanner.nextFloat();
+        // float segundo_control = scanner.nextFloat();
+        // float resultado = (primer_control + segundo_control) / 2;
+
+        // if (resultado <= 5f) {
+        // System.out.println("Cual fue tu resultado en la recuperacion? (apto/no
+        // apto)");
+        // String res = System.console().readLine();
+        // if (res.equalsIgnoreCase("apto")) {
+        // System.out.println("Tu nota es 5 em programacion");
+
+        // } else {
+        // System.out.printf("Tu nota es %.2f em programacion", resultado);
+        // }
+        // } else {
+        // System.out.printf("\nTu nota es %.2f em programacion\n", resultado);
+        // }
+        // scanner.close();
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Que dia de la semana estas ??");
+        final String dia_semana = scanner.nextLine();
+
+        System.out.println("Que horas son ??");
+        final int hr_semana = scanner.nextInt();
+
+        System.out.println("Que minutos son ??");
+        final int min_semana = scanner.nextInt();
+
+        switch (dia_semana) {
+            case "lunes":
+                System.out.println("Te faltan 4 dias, " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
+                break;
+            case "martes":
+                System.out.println("Te faltan 3 dias, " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
+
+                break;
+            case "miercoles":
+                System.out.println("Te faltan 2 dias, " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
+
+                break;
+            case "jueves":
+
+                System.out.println("Te faltan 1 dias, " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
+                break;
+            case "viernes":
+                System.out.println("Te faltan " + (hr_semana - 15) + " hr y " + (min_semana - 60) + " m ");
+                break;
+                default:
+                System.out.println("Valor invalido");
+                break;
         }
-        System.out.println("RESULTADO FINAL:\n" + (resultado / 3));
+
+        scanner.close();
     }
 
     public static void main(String[] args) {

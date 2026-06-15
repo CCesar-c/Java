@@ -740,17 +740,16 @@ public class Livro_2_jv_exercicios {
 
         float iva = 0;
         float promo = 0;
-        // float res = 0;
+        float res = 0;
 
-        Scanner scanner = new Scanner(System.in);
         System.out.println("base inponible ");
-        final float base = scanner.nextFloat();
+        final float base = Float.parseFloat(System.console().readLine());
 
         System.out.println("introduzca el I.V.A ");
-        final String ivaTipo = scanner.nextLine();
+        final String ivaTipo = System.console().readLine();
 
-        // System.out.println("introduzca el codigo promocional");
-        // final String promoTipo = scanner.nextLine();
+        System.out.println("introduzca el codigo promocional");
+        final String promoTipo = System.console().readLine();
 
         switch (ivaTipo) {
             case "general":
@@ -769,34 +768,36 @@ public class Livro_2_jv_exercicios {
                 System.out.println("Iva invalido");
                 break;
         }
-        // switch (promoTipo) {
-        //     case "no_promo":
-        //         promo = 0f;
-        //         break;
-        //     case "mitad":
-        //         promo = 0.5f;
+        switch (promoTipo) {
+            case "no_promo":
+                promo = 0f;
+                break;
+            case "mitad":
+                promo = 0.50f;
 
-        //         break;
-        //     case "meno5":
-        //         promo = 5f; // hay qu restarlo no se te olvide
+                break;
+            case "meno5":
+                promo = 5f; // hay qu restarlo no se te olvide
 
-        //         break;
-        //     case "5porc":
-        //         promo = 0.05f;
+                break;
+            case "5porc":
+                promo = 0.05f;
 
-        //         break;
+                break;
 
-        //     default:
-        //         System.out.println("Valor invalido");
-        //         break;
-        // }
+            default:
+                System.out.println("Valor invalido");
+                break;
+        }
 
+        res = base * (iva + 1.00f);
         System.out.println("La base imponible:  " + base);
-        System.out.println("Iva (" + iva * 100 + "%):    " + base * iva);
+        System.out.println("Iva (" + iva * 100 + "%):    " + (base * iva));
         System.out.println("Precio con Iva (" + iva * 100 + "%):     " + base * (iva + 1.00));
-        //System.out.println("cod. promo. (" + promoTipo + "):    " + base * promo);
-
-        scanner.close();
+        System.out.println("cod. promo. (" + promoTipo + "):    "
+                + (promoTipo.equalsIgnoreCase("meno5") == true ? "5" : res * promo));
+        // solo si se puso meno5 cuenta normal
+        System.out.println("Total:    " + (promoTipo.equalsIgnoreCase("meno5") == true ? res - promo : res * promo));
     }
 
     public static void main(String[] args) {

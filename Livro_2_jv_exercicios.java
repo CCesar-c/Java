@@ -738,66 +738,124 @@ public class Livro_2_jv_exercicios {
 
         // scanner.close();
 
-        float iva = 0;
-        float promo = 0;
-        float res = 0;
+        // float iva = 0;
+        // float promo = 0;
+        // float res = 0;
 
-        System.out.println("base inponible ");
-        final float base = Float.parseFloat(System.console().readLine());
+        // System.out.println("base inponible ");
+        // final float base = Float.parseFloat(System.console().readLine());
 
-        System.out.println("introduzca el I.V.A ");
-        final String ivaTipo = System.console().readLine();
+        // System.out.println("introduzca el I.V.A ");
+        // final String ivaTipo = System.console().readLine();
 
-        System.out.println("introduzca el codigo promocional");
-        final String promoTipo = System.console().readLine();
+        // System.out.println("introduzca el codigo promocional");
+        // final String promoTipo = System.console().readLine();
 
-        switch (ivaTipo) {
-            case "general":
-                iva = 0.21f;
+        // switch (ivaTipo) {
+        // case "general":
+        // iva = 0.21f;
+        // break;
+        // case "reducido":
+        // iva = 0.10f;
+
+        // break;
+        // case "superreducido":
+        // iva = 0.04f;
+
+        // break;
+
+        // default:
+        // System.out.println("Iva invalido");
+        // break;
+        // }
+        // switch (promoTipo) {
+        // case "no_promo":
+        // promo = 0f;
+        // break;
+        // case "mitad":
+        // promo = 0.50f;
+
+        // break;
+        // case "meno5":
+        // promo = 5f; // hay qu restarlo no se te olvide
+
+        // break;
+        // case "5porc":
+        // promo = 0.05f;
+
+        // break;
+
+        // default:
+        // System.out.println("Valor invalido");
+        // break;
+        // }
+
+        // res = base * (iva + 1.00f);
+        // System.out.println("La base imponible: " + base);
+        // System.out.println("Iva (" + iva * 100 + "%): " + (base * iva));
+        // System.out.println("Precio con Iva (" + iva * 100 + "%): " + base * (iva +
+        // 1.00));
+        // System.out.println("cod. promo. (" + promoTipo + "): "
+        // + (promoTipo.equalsIgnoreCase("meno5") == true ? "5" : res * promo));
+        // // solo si se puso meno5 cuenta normal
+        // System.out.println("Total: " + (promoTipo.equalsIgnoreCase("meno5") == true ?
+        // res - promo : res * promo));
+
+        double salario = 0;
+        double extraPorViaje = 0;
+        double Irfa = 0;
+
+        System.out.println("1 - Programador junior\n" +
+                "2 - Prog. senior\n" +
+                "3 - Jefe de proyecto");
+        System.out.println("Que cargo tienes ??");
+        int cargoInt = Integer.parseInt(System.console().readLine());
+        System.out.println("¿Cuántos días ha estado de viaje visitando clientes?");
+        int diasViajados = Integer.parseInt(System.console().readLine());
+        System.out.println("Introduzca su estado civil (1 - Soltero, 2 - Casado)");
+        int estadoCivil = Integer.parseInt(System.console().readLine());
+
+        switch (cargoInt) {
+            case 1:
+                salario = 950;
                 break;
-            case "reducido":
-                iva = 0.10f;
 
+            case 2:
+                salario = 1200;
                 break;
-            case "superreducido":
-                iva = 0.04f;
 
+            case 3:
+                salario = 1600;
                 break;
 
             default:
-                System.out.println("Iva invalido");
+                salario = 0;
                 break;
         }
-        switch (promoTipo) {
-            case "no_promo":
-                promo = 0f;
-                break;
-            case "mitad":
-                promo = 0.50f;
 
+        switch (estadoCivil) {
+            case 1:
+                Irfa = 0.25d; // soltero
                 break;
-            case "meno5":
-                promo = 5f; // hay qu restarlo no se te olvide
-
-                break;
-            case "5porc":
-                promo = 0.05f;
-
+            case 2:
+                Irfa = 0.20d; // casado
                 break;
 
             default:
-                System.out.println("Valor invalido");
+                Irfa = 0; // casado
                 break;
         }
 
-        res = base * (iva + 1.00f);
-        System.out.println("La base imponible:  " + base);
-        System.out.println("Iva (" + iva * 100 + "%):    " + (base * iva));
-        System.out.println("Precio con Iva (" + iva * 100 + "%):     " + base * (iva + 1.00));
-        System.out.println("cod. promo. (" + promoTipo + "):    "
-                + (promoTipo.equalsIgnoreCase("meno5") == true ? "5" : res * promo));
-        // solo si se puso meno5 cuenta normal
-        System.out.println("Total:    " + (promoTipo.equalsIgnoreCase("meno5") == true ? res - promo : res * promo));
+        System.out.println("=========================");
+        System.out.printf("| sueldo base:        %d|", salario);
+        System.out.printf("| Dieta(%.2f viajes):   %.2f|", diasViajados, (diasViajados * 30));
+        System.out.println("|-----------------------|");
+        System.out.printf("| Sueldo bruto:       %.2f|", salario + (diasViajados * 30));
+        System.out.printf("| IRPF (%.2f):          %.2f|", Irfa * 100, salario * Irfa);
+        System.out.println("|-----------------------|");
+        System.out.printf("| Sueldo bruto:       %.2f|", salario + (diasViajados * 30) - (salario * Irfa ) );
+        System.out.println("=========================");
+
     }
 
     public static void main(String[] args) {

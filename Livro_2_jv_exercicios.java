@@ -860,31 +860,26 @@ public class Livro_2_jv_exercicios {
         // System.out.println("=========================");
 
 
-      System.out.println("Altura de la bandera??")
-      int height = Integer.parseInt(System.console(.readLine());
+      float total = 0;
+      System.out.println("Altura de la bandera??");
+      int height = Integer.parseInt(System.console().readLine());
       
-      System.out.println("ancho de la bandera??")
-      int width = Integer.parseInt(System.console(.readLine());
+      System.out.println("ancho de la bandera??");
+      int width = Integer.parseInt(System.console().readLine());
 
       int tamano = height * width;
+      total = tamano / 100;
       
-      System.out.println("ancho de con escudo??")
+      System.out.println("ancho de con escudo??");
       String resposta = System.console().readLine();
-
       if(resposta.equals("si")){
-        
+        total = 3.25f;
       }else if(resposta.equals("no")){
-        
+        total = 0f;
       }else{
-        
+        total = 0f;
       }
-      
-      
-
-
-
-      
-
+      System.out.println("");
     }
 
     public static void main(String[] args) {

@@ -801,60 +801,89 @@ public class Livro_2_jv_exercicios {
         // System.out.println("Total: " + (promoTipo.equalsIgnoreCase("meno5") == true ?
         // res - promo : res * promo));
 
-        double salario = 0;
-        double extraPorViaje = 0;
-        double Irfa = 0;
 
-        System.out.println("1 - Programador junior\n" +
-                "2 - Prog. senior\n" +
-                "3 - Jefe de proyecto");
-        System.out.println("Que cargo tienes ??");
-        int cargoInt = Integer.parseInt(System.console().readLine());
-        System.out.println("¿Cuántos días ha estado de viaje visitando clientes?");
-        int diasViajados = Integer.parseInt(System.console().readLine());
-        System.out.println("Introduzca su estado civil (1 - Soltero, 2 - Casado)");
-        int estadoCivil = Integer.parseInt(System.console().readLine());
+      
+        // int salario = 0;
+        // double extraPorViaje = 0;
+        // double Irfa = 0;
 
-        switch (cargoInt) {
-            case 1:
-                salario = 950;
-                break;
+        // System.out.println("1 - Programador junior\n" +
+        //         "2 - Prog. senior\n" +
+        //         "3 - Jefe de proyecto");
+        // System.out.println("Que cargo tienes ??");
+        // int cargoInt = Integer.parseInt(System.console().readLine());
+        // System.out.println("¿Cuántos días ha estado de viaje visitando clientes?");
+        // int diasViajados = Integer.parseInt(System.console().readLine());
+        // System.out.println("Introduzca su estado civil (1 - Soltero, 2 - Casado)");
+        // int estadoCivil = Integer.parseInt(System.console().readLine());
 
-            case 2:
-                salario = 1200;
-                break;
+        // switch (cargoInt) {
+        //     case 1:
+        //         salario = 950;
+        //         break;
 
-            case 3:
-                salario = 1600;
-                break;
+        //     case 2:
+        //         salario = 1200;
+        //         break;
 
-            default:
-                salario = 0;
-                break;
-        }
+        //     case 3:
+        //         salario = 1600;
+        //         break;
 
-        switch (estadoCivil) {
-            case 1:
-                Irfa = 0.25d; // soltero
-                break;
-            case 2:
-                Irfa = 0.20d; // casado
-                break;
+        //     default:
+        //         salario = 0;
+        //         break;
+        // }
 
-            default:
-                Irfa = 0; // casado
-                break;
-        }
+        // switch (estadoCivil) {
+        //     case 1:
+        //         Irfa = 0.25d; // soltero
+        //         break;
+        //     case 2:
+        //         Irfa = 0.20d; // casado
+        //         break;
 
-        System.out.println("=========================");
-        System.out.printf("| sueldo base:        %d|", salario);
-        System.out.printf("| Dieta(%.2f viajes):   %.2f|", diasViajados, (diasViajados * 30));
-        System.out.println("|-----------------------|");
-        System.out.printf("| Sueldo bruto:       %.2f|", salario + (diasViajados * 30));
-        System.out.printf("| IRPF (%.2f):          %.2f|", Irfa * 100, salario * Irfa);
-        System.out.println("|-----------------------|");
-        System.out.printf("| Sueldo bruto:       %.2f|", salario + (diasViajados * 30) - (salario * Irfa ) );
-        System.out.println("=========================");
+        //     default:
+        //         Irfa = 0; // error
+        //         break;
+        // }
+
+        // System.out.println("=========================");
+        // System.out.println("| sueldo base: " + (salario));
+        // System.out.println("| Dieta(viajes): " + (diasViajados * 30));
+        // System.out.println("|-----------------------|");
+        // System.out.println("| Sueldo bruto: "+ (salario + (diasViajados * 30)));
+        // int salario_bruto = salario + diasViajados * 30;
+        // System.out.println("| IRPF : " + (salario_bruto * Irfa ));
+        // System.out.println("|-----------------------|");
+        // System.out.println("| Sueldo bruto: " +  (salario_bruto -( salario_bruto * Irfa ) ));
+        // System.out.println("=========================");
+
+
+      System.out.println("Altura de la bandera??")
+      int height = Integer.parseInt(System.console(.readLine());
+      
+      System.out.println("ancho de la bandera??")
+      int width = Integer.parseInt(System.console(.readLine());
+
+      int tamano = height * width;
+      
+      System.out.println("ancho de con escudo??")
+      String resposta = System.console().readLine();
+
+      if(resposta.equals("si")){
+        
+      }else if(resposta.equals("no")){
+        
+      }else{
+        
+      }
+      
+      
+
+
+
+      
 
     }
 

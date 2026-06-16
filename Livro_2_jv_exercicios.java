@@ -801,15 +801,13 @@ public class Livro_2_jv_exercicios {
         // System.out.println("Total: " + (promoTipo.equalsIgnoreCase("meno5") == true ?
         // res - promo : res * promo));
 
-
-      
         // int salario = 0;
         // double extraPorViaje = 0;
         // double Irfa = 0;
 
         // System.out.println("1 - Programador junior\n" +
-        //         "2 - Prog. senior\n" +
-        //         "3 - Jefe de proyecto");
+        // "2 - Prog. senior\n" +
+        // "3 - Jefe de proyecto");
         // System.out.println("Que cargo tienes ??");
         // int cargoInt = Integer.parseInt(System.console().readLine());
         // System.out.println("¿Cuántos días ha estado de viaje visitando clientes?");
@@ -818,34 +816,34 @@ public class Livro_2_jv_exercicios {
         // int estadoCivil = Integer.parseInt(System.console().readLine());
 
         // switch (cargoInt) {
-        //     case 1:
-        //         salario = 950;
-        //         break;
+        // case 1:
+        // salario = 950;
+        // break;
 
-        //     case 2:
-        //         salario = 1200;
-        //         break;
+        // case 2:
+        // salario = 1200;
+        // break;
 
-        //     case 3:
-        //         salario = 1600;
-        //         break;
+        // case 3:
+        // salario = 1600;
+        // break;
 
-        //     default:
-        //         salario = 0;
-        //         break;
+        // default:
+        // salario = 0;
+        // break;
         // }
 
         // switch (estadoCivil) {
-        //     case 1:
-        //         Irfa = 0.25d; // soltero
-        //         break;
-        //     case 2:
-        //         Irfa = 0.20d; // casado
-        //         break;
+        // case 1:
+        // Irfa = 0.25d; // soltero
+        // break;
+        // case 2:
+        // Irfa = 0.20d; // casado
+        // break;
 
-        //     default:
-        //         Irfa = 0; // error
-        //         break;
+        // default:
+        // Irfa = 0; // error
+        // break;
         // }
 
         // System.out.println("=========================");
@@ -856,30 +854,40 @@ public class Livro_2_jv_exercicios {
         // int salario_bruto = salario + diasViajados * 30;
         // System.out.println("| IRPF : " + (salario_bruto * Irfa ));
         // System.out.println("|-----------------------|");
-        // System.out.println("| Sueldo bruto: " +  (salario_bruto -( salario_bruto * Irfa ) ));
+        // System.out.println("| Sueldo bruto: " + (salario_bruto -( salario_bruto *
+        // Irfa ) ));
         // System.out.println("=========================");
 
+        float total = 0;
+        System.out.println("Altura de la bandera??");
+        int height = Integer.parseInt(System.console().readLine());
 
-      float total = 0;
-      System.out.println("Altura de la bandera??");
-      int height = Integer.parseInt(System.console().readLine());
-      
-      System.out.println("ancho de la bandera??");
-      int width = Integer.parseInt(System.console().readLine());
+        System.out.println("ancho de la bandera??");
+        int width = Integer.parseInt(System.console().readLine());
 
-      int tamano = height * width;
-      total = tamano / 100;
-      
-      System.out.println("ancho de con escudo??");
-      String resposta = System.console().readLine();
-      if(resposta.equals("si")){
-        total = 3.25f;
-      }else if(resposta.equals("no")){
-        total = 0f;
-      }else{
-        total = 0f;
-      }
-      System.out.println("");
+        float tamano = height * width;
+        System.out.println("tamanho: " + tamano);
+        total = tamano / 100;
+        System.out.println("rs: " + total);
+        total += 3.25f;
+        System.out.println("con envio: " + total);
+
+        System.out.println("con escudo??");
+        String resposta = System.console().readLine();
+        if (resposta.equals("s")) {
+            total += 2.50f;
+            System.out.println("Bandera: " + tamano + "  en euros: " + tamano / 100);
+            System.out.println("con escudo: " + 2.50f);
+            System.out.println("envio: " + 3.25f);
+            System.out.println("total: " + total);
+        } else if (resposta.equals("n")) {
+            System.out.println("Bandera: " + tamano + "  en euros: " + tamano / 100);
+            System.out.println("sin escudo: " + 0);
+            System.out.println("envio: " + 3.25f);
+            System.out.println("total: " + total);
+        } else {
+            total = 0f;
+        }
     }
 
     public static void main(String[] args) {

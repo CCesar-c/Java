@@ -861,36 +861,64 @@ public class Livro_2_jv_exercicios {
 
 
         
-        float total = 0;
-        System.out.println("Altura de la bandera??");
-        int height = Integer.parseInt(System.console().readLine());
+        // float total = 0;
+        // System.out.println("Altura de la bandera??");
+        // int height = Integer.parseInt(System.console().readLine());
 
-        System.out.println("ancho de la bandera??");
-        int width = Integer.parseInt(System.console().readLine());
+        // System.out.println("ancho de la bandera??");
+        // int width = Integer.parseInt(System.console().readLine());
 
-        float tamano = height * width;
-        System.out.println("tamanho: " + tamano);
-        total = tamano / 100;
-        System.out.println("rs: " + total);
-        total += 3.25f;
-        System.out.println("con envio: " + total);
+        // float tamano = height * width;
+        // System.out.println("tamanho: " + tamano);
+        // total = tamano / 100;
+        // System.out.println("rs: " + total);
+        // total += 3.25f;
+        // System.out.println("con envio: " + total);
 
-        System.out.println("con escudo??");
-        String resposta = System.console().readLine();
-        if (resposta.equals("s")) {
-            total += 2.50f;
-            System.out.println("Bandera: " + tamano + "  en euros: " + tamano / 100);
-            System.out.println("con escudo: " + 2.50f);
-            System.out.println("envio: " + 3.25f);
-            System.out.println("total: " + total);
-        } else if (resposta.equals("n")) {
-            System.out.println("Bandera: " + tamano + "  en euros: " + tamano / 100);
-            System.out.println("sin escudo: " + 0);
-            System.out.println("envio: " + 3.25f);
-            System.out.println("total: " + total);
-        } else {
-            total = 0f;
-        }
+        // System.out.println("con escudo??");
+        // String resposta = System.console().readLine();
+        // if (resposta.equals("s")) {
+        //     total += 2.50f;
+        //     System.out.println("Bandera: " + tamano + "  en euros: " + tamano / 100);
+        //     System.out.println("con escudo: " + 2.50f);
+        //     System.out.println("envio: " + 3.25f);
+        //     System.out.println("total: " + total);
+        // } else if (resposta.equals("n")) {
+        //     System.out.println("Bandera: " + tamano + "  en euros: " + tamano / 100);
+        //     System.out.println("sin escudo: " + 0);
+        //     System.out.println("envio: " + 3.25f);
+        //     System.out.println("total: " + total);
+        // } else {
+        //     total = 0f;
+        // }
+
+
+      System.out.println("Venta de entradas CineCampa");
+      System.out.println("Numero de entradas..??");
+      int num_entradas = Integer.parseInt(System.console().readLine());
+      System.out.println("Dia de la semana..??");
+      String dia_semana = System.console().readLine();
+      System.out.println("Tienes tarjeta de cineCampa..??");
+      String Tienes_tarjeta = System.console().readLine();
+      //Calculo
+      
+      System.out.println("numero de entradas: " + num_entradas);
+      switch(dia_semana){
+          case "miercoles":
+            break;
+        case "jueves":
+          break;
+        default:
+          System.out.println("total : " + (num_entradas * 8.00));
+      System.out.println("descuento: " + Tienes_tarjeta.equalsIgnoreCase("s") ? (num_entradas * 8.00 * 0.10) : 0);
+      System.out.println("A pagar: " + Tienes_tarjeta.equalsIgnoreCase("s") ? (num_entradas * 8.00) - (num_entradas * 8.00 * 0.10) :(num_entradas * 8.00) );
+          break;
+      }
+      
+
+    
+      
+      
     }
 
     public static void main(String[] args) {

@@ -858,6 +858,9 @@ public class Livro_2_jv_exercicios {
         // Irfa ) ));
         // System.out.println("=========================");
 
+
+
+        
         float total = 0;
         System.out.println("Altura de la bandera??");
         int height = Integer.parseInt(System.console().readLine());

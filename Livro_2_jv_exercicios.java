@@ -889,30 +889,294 @@ public class Livro_2_jv_exercicios {
     // total = 0f;
     // }
 
-    System.out.println("Venta de entradas CineCampa");
-    System.out.println("Numero de entradas..??");
-    int num_entradas = Integer.parseInt(System.console().readLine());
-    System.out.println("Dia de la semana..??");
-    String dia_semana = System.console().readLine();
-    System.out.println("Tienes tarjeta de cineCampa..??");
-    String Tienes_tarjeta = System.console().readLine();
-    // Calculo
+    // System.out.println("Venta de entradas CineCampa");
+    // System.out.println("Numero de entradas..??");
+    // int num_entradas = Integer.parseInt(System.console().readLine());
 
-    System.out.println("numero de entradas: " + num_entradas);
-    switch (dia_semana) {
-      case "miercoles":
-        break;
-      case "jueves":
-        break;
-      default:
-        System.out.println("total : " + (num_entradas * 8.00));
-        System.out.println("descuento: " + (Tienes_tarjeta.equalsIgnoreCase("s") ? (num_entradas * 8.00 * 0.10) : 0));
-        System.out.println(
-            "A pagar: " + (Tienes_tarjeta.equalsIgnoreCase("s") ? (num_entradas * 8.00) - (num_entradas * 8.00 * 0.10)
-                : (num_entradas * 8.00)));
-        break;
-    }
+    // System.out.println("Dia de la semana..??");
+    // String dia_semana = System.console().readLine();
 
+    // System.out.println("Tienes tarjeta de cineCampa..??");
+    // String Tienes_tarjeta = System.console().readLine();
+
+    // // Calculo
+
+    // System.out.println("numero de entradas: " + num_entradas);
+    // switch (dia_semana) {
+    // case "miercoles": // entrada 5
+    // System.out.println("total : " + (num_entradas * 5.00) + " euro");
+    // System.out
+    // .println(
+    // "descuento: " + (Tienes_tarjeta.equalsIgnoreCase("s") ? (num_entradas * 5.00
+    // )* 0.10 : 0) + " euro");
+    // System.out.println(
+    // "A pagar: " + (Tienes_tarjeta.equalsIgnoreCase("s") ? (num_entradas * 5.00) -
+    // (num_entradas * 5.00 )* 0.10
+    // : (num_entradas * 5.00)) + " euro");
+    // break;
+    // case "jueves": // entrada 11 por casal
+    // if (num_entradas % 2 == 0) {
+    // System.out.println("total : " + ((num_entradas / 2) * 11.00) + " euro");
+    // System.out
+    // .println(
+    // "descuento: " + (Tienes_tarjeta.equalsIgnoreCase("s") ? ((num_entradas / 2) *
+    // 11.00 * 0.10) : 0)
+    // + " euro");
+    // System.out.println(
+    // "A pagar: "
+    // + (Tienes_tarjeta.equalsIgnoreCase("s")
+    // ? ((num_entradas / 2) * 11.00) - ((num_entradas / 2) * 11.00 * 0.10)
+    // : ((num_entradas / 2) * 11.00))
+    // + " euro");
+    // } else {
+    // System.out.println("total : " + ((num_entradas - 1) / 2 * 11.00 + 8.00) + "
+    // euro");
+    // System.out
+    // .println(
+    // "descuento: "
+    // + (Tienes_tarjeta.equalsIgnoreCase("s") ? (((num_entradas - 1) / 2 * 11) + 8)
+    // * 0.10 : 0)
+    // + " euro");
+    // System.out.println(
+    // "A pagar: " + (Tienes_tarjeta.equalsIgnoreCase("s")
+    // ? (num_entradas / 2 * 11.00 + 8.00) - (((num_entradas - 1) / 2 * 11) + 8) *
+    // 0.10
+    // : (num_entradas / 2 * 11.00 + 8.00)) + " euro");
+    // }
+    // break;
+    // default:
+    // System.out.println("total : " + (num_entradas * 8.00) + " euro");
+    // System.out
+    // .println(
+    // "descuento: " + (Tienes_tarjeta.equalsIgnoreCase("s") ? (num_entradas * 8.00
+    // * 0.10) : 0) + " euro");
+    // System.out.println(
+    // "A pagar: " + (Tienes_tarjeta.equalsIgnoreCase("s") ? (num_entradas * 8.00) -
+    // (num_entradas * 8.00 * 0.10)
+    // : (num_entradas * 8.00)) + " euro");
+    // break;
+    // }
+
+    // float nombreValue = 0f;
+    // float nataValue = 0f;
+    // String chltSaborEscolhido = "";
+    // System.out.println("Elija un sabor (manzana, fresa o chocolate):");
+    // String SaborEscolhido = System.console().readLine();
+
+    // if (SaborEscolhido.equals("chocolate")) {
+    // System.out.println("¿Qué tipo de chocolate quiere? (negro o blanco):");
+    // chltSaborEscolhido = System.console().readLine();
+    // }
+
+    // // add nata
+    // System.out.println("¿Quiere nata? (si o no): ");
+    // String nataEscolhido = System.console().readLine();
+
+    // // pal nombre
+    // System.out.println("¿Quiere ponerle un nombre? (si o no): ");
+    // String nombreEscolhido = System.console().readLine();
+
+    // nombreValue = (nombreEscolhido.equalsIgnoreCase("si") ? 2.75f : 0f);
+    // nataValue = (nataEscolhido.equalsIgnoreCase("si") ? 2.50f : 0f);
+    // switch (SaborEscolhido) {
+    // case "manzana":
+
+    // System.out.println("Tarta de manzana: " + 18.00 + " euros");
+    // if (nombreValue != 0) {
+    // System.out.println("Con nombre: " + nombreValue + " euros");
+    // }
+    // if (nataValue != 0) {
+    // System.out.println("Con nata: " + nataValue + " euros");
+    // }
+    // System.out.println("Total: " + (nombreValue + nataValue + 18.00) + " euros");
+
+    // break;
+    // case "fresa":
+
+    // System.out.println("Tarta de Fresa: " + 16.00 + " euros");
+    // if (nombreValue != 0) {
+    // System.out.println("Con nombre: " + nombreValue + " euros");
+    // }
+    // if (nataValue != 0) {
+    // System.out.println("Con nata: " + nataValue + " euros");
+    // }
+    // System.out.println("Total: " + (nombreValue + nataValue + 16.00) + " euros");
+
+    // break;
+    // case "chocolate":
+
+    // if (chltSaborEscolhido.equalsIgnoreCase("negro")) {
+    // System.out.println("Tarta de Fresa: " + 14.00 + " euros");
+    // if (nombreValue != 0) {
+    // System.out.println("Con nombre: " + nombreValue + " euros");
+    // }
+    // if (nataValue != 0) {
+    // System.out.println("Con nata: " + nataValue + " euros");
+    // }
+    // System.out.println("Total: " + (nombreValue + nataValue + 14.00) + " euros");
+    // } else {
+    // System.out.println("Tarta de Fresa: " + 15.00 + " euros");
+    // if (nombreValue != 0) {
+    // System.out.println("Con nombre: " + nombreValue + " euros");
+    // }
+    // if (nataValue != 0) {
+    // System.out.println("Con nata: " + nataValue + " euros");
+    // }
+    // System.out.println("Total: " + (nombreValue + nataValue + 15.00) + " euros");
+    // }
+    // break;
+
+    // default:
+    // System.err.println("Sabor no definido");
+    // break;
+    // }
+
+    // System.out.println("Turno del jugador 1 (introduzca piedra, papel o
+    // tijera):");
+    // String player_1 = System.console().readLine();
+
+    // System.out.println("Turno del jugador 2 (introduzca piedra, papel o
+    // tijera):");
+    // String player_2 = System.console().readLine();
+
+    // // piedra
+    // if (player_1.equalsIgnoreCase("piedra") &&
+    // player_2.equalsIgnoreCase("piedra")) {
+    // System.out.println("empate");
+
+    // } else if (player_1.equalsIgnoreCase("piedra") &&
+    // player_2.equalsIgnoreCase("papel")) {
+    // System.out.println("Gana el jugador 2");
+    // } else if (player_1.equalsIgnoreCase("piedra") &&
+    // player_2.equalsIgnoreCase("tijera")) {
+    // System.out.println("Gana el jugador 1");
+
+    // }
+    // // papel
+    // if (player_1.equalsIgnoreCase("papel") &&
+    // player_2.equalsIgnoreCase("piedra")) {
+    // System.out.println("Gana el jugador 1");
+    // } else if (player_1.equalsIgnoreCase("papel") &&
+    // player_2.equalsIgnoreCase("papel")) {
+    // System.out.println("Empate");
+    // } else if (player_1.equalsIgnoreCase("papel") &&
+    // player_2.equalsIgnoreCase("tijera")) {
+    // System.out.println("Gana el jugador 2");
+    // }
+    // // tijera
+    // if (player_1.equalsIgnoreCase("tijera") &&
+    // player_2.equalsIgnoreCase("piedra")) {
+    // System.out.println("Gana el jugador 2");
+    // } else if (player_1.equalsIgnoreCase("tijera") &&
+    // player_2.equalsIgnoreCase("papel")) {
+    // System.out.println("Gana el jugador 1");
+    // } else if (player_1.equalsIgnoreCase("tijera") &&
+    // player_2.equalsIgnoreCase("tijera")) {
+    // System.out.println("empate");
+    // }
+
+    // float comidaValue = 0f;
+    // float bebidaValue = 0f;
+    // float resultado = 0f;
+
+    // String pitufoSelect = "";
+
+    // System.out.println("¿Qué ha tomado de comer? (palmera, donut o pitufo):");
+    // String comidaSelect = System.console().readLine();
+
+    // if (comidaSelect.equalsIgnoreCase("pitufo")) {
+    // System.out.println("¿Con qué se ha tomado el pitufo? (aceite o tortilla)?");
+    // pitufoSelect = System.console().readLine();
+    // }
+    // System.out.println("¿Qué ha tomado de beber? (zumo o café): ");
+    // String bebidaSelect = System.console().readLine();
+
+    // switch (comidaSelect) {
+    // case "donut":
+    // comidaValue = 1f;
+    // System.out.println("Donut: " + comidaValue);
+    // break;
+
+    // case "palmera":
+    // comidaValue = 1.40f;
+    // System.out.println("palmeira: " + comidaValue);
+    // break;
+
+    // case "pitufo":
+    // if (pitufoSelect.equalsIgnoreCase("aceite")) {
+    // comidaValue = 1.20f;
+    // System.out.println("Pitufo con Pitufo con aceite: " + comidaValue);
+    // } else {
+    // comidaValue = 1.60f;
+    // System.out.println("Pitufo con Pitufo con tortilla: " + bebidaValue);
+    // }
+    // break;
+
+    // default:
+    // System.err.println("Comida no definido");
+    // break;
+    // }
+    // bebidaValue = bebidaSelect.equalsIgnoreCase("cafe") ? 1.20f : 1.50f;
+    // System.out.println(bebidaSelect.equalsIgnoreCase("cafe") ? ("Cafe: " +
+    // bebidaValue) : ("Zumo: " + bebidaValue));
+    // System.out.println("Total de desayuno: " + (bebidaValue + comidaValue));
+
+    // for (int i = 1; i < 101; i++) {
+    // System.out.println(i);
+    // }
+
+    // int i = 0;
+    // while (i != 100) {
+    // i++;
+    // System.out.println(i);
+    // }
+
+    // int i = 0;
+    // do {
+    // i++;
+    // System.out.println(i);
+    // } while (i != 100);
+
+    // for (int i = 320; i >= 160; i -= 20) {
+    // System.out.println(i);
+    // }
+
+    // int i = 340;
+
+    // while (i != 160) {
+    // System.out.println(i -= 20);
+    // }
+
+    // int i = 340;
+    // do {
+    // System.out.println(i -= 20);
+    // } while (i != 160);
+
+    // int tentativas = 4;
+    // int senhaVerdadeira = 1234;
+    // System.out.println("Tienes 4 tentativas");
+    // while (tentativas != 0) {
+    // int senhaTentada = Integer.parseInt(System.console().readLine());
+    // if (senhaTentada != senhaVerdadeira) {
+    // tentativas -= 1;
+    // System.out.println("Lo siento, esa no es la combinación: " + tentativas);
+    // } else {
+    // System.out
+    // .println("“La caja fuerte se ha abierto satisfactoriamente” y te quedaron " +
+    // tentativas + " Tentativas");
+    // return;
+    // }
+    // }
+    //
+
+    //
+    //
+    //
+    // System.out.println("Escoge un numero");
+    // int numero = Integer.parseInt(System.console().readLine());
+    // for (int i = 1; i <= 20; i++) {
+    // System.out.println((numero) + " x " + (i) + " = " + (numero * i));
+    // }
   }
 
   public static void main(String[] args) {

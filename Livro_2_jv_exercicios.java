@@ -1177,8 +1177,22 @@ public class Livro_2_jv_exercicios {
     // for (int i = 1; i <= 20; i++) {
     // System.out.println((numero) + " x " + (i) + " = " + (numero * i));
     // }
-  }
 
+
+
+    int[] arrayInts = new ([]);
+      
+    for(int i = 0; i < 1000; i++){
+      int numero = Integer.parseInt(System.console().readLine());
+      if(numero == 0){
+        return;
+      }
+      arrayInts[i] = numero;
+  }
+  System.out.println(arrayInts.length);
+
+}
+  
   public static void main(String[] args) {
     SalidaDatos();
   }

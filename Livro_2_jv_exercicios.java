@@ -1211,16 +1211,31 @@ public class Livro_2_jv_exercicios {
         //
         //
         //
-        int num = Integer.parseInt(System.console().readLine());
-        
-            System.out.println("numero     || cuadrado       || cubo");
-        int total = num + 5;
-        for (int i = num; i < total; i++) {
-            System.out.println("===============");
-            System.out.println("|" + i + " || " + (i * i) +" || "+ (i * i * i));
-            System.out.println("===============");
-            //System.out.println(i);
+        // int num = Integer.parseInt(System.console().readLine());
+
+        // System.out.println("numero || cuadrado || cubo");
+        // int total = num + 5;
+        // for (int i = num; i < total; i++) {
+        // System.out.println("===============");
+        // System.out.println("|" + i + " || " + (i * i) + " || " + (i * i * i));
+        // System.out.println("===============");
+        // // System.out.println(i);
+        // }
+
+        //
+        //
+        //
+        //
+        System.out.println("Cuantos terminos quiere que tenga su fibonnaci");
+        int numeroSelect = Integer.parseInt(System.console().readLine()), numAtual = 1, numAnterior = 0;
+        System.out.println("Resultado:");
+        for (int i = 0; i <= numeroSelect; i++) {
+            System.out.println(numAnterior);
+            System.out.println(numAtual);
+            numAnterior += numAtual;
+            numAtual += numAnterior;
         }
+
     }
 
     public static void main(String[] args) {

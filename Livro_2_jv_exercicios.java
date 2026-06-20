@@ -2313,16 +2313,65 @@ public class Livro_2_jv_exercicios {
         //
         //
 
-        System.out.println("Cuantos terminos quiere que tenga su fibonnaci");
-        int numeroSelect = Integer.parseInt(System.console().readLine()), numAtual = 1, numAnterior = 0;
-        System.out.println("Resultado:");
-        for (int i = 0; i <= numeroSelect; i++) {
-            System.out.println(numAnterior);
-            System.out.println(numAtual);
-            numAnterior += numAtual;
-            numAtual += numAnterior;
-        }
+        // System.out.println("Cuantos terminos quiere que tenga su fibonnaci");
+        // int numeroSelect = Integer.parseInt(System.console().readLine()), numAtual = 1, numAnterior = 0;
+        // System.out.println("Resultado:");
+        // for (int i = 0; i <= numeroSelect; i++) {
+        //     System.out.println(numAnterior);
+        //     System.out.println(numAtual);
+        //     numAnterior += numAtual;
+        //     numAtual += numAnterior;
+        // }
+        //
+        //
+        //
+      //
+      //
+      ///
+      // Stack<Integer> nums_postivos = new Stack<Integer>(){};
+      // Stack<Integer> nums_negativos = new Stack<Integer>(){};
+      // int numeroSelect = 0;
+      // int numPtv = 0;
+      // int numNtv = 0;
+      
+      // for(int i = 0; i< 10;i++){
+      //   numeroSelect = Integer.parseInt(System.console().readLine());
+      // if(numeroSelect >=0){
+      //     nums_postivos.push(numeroSelect);
+      //     numPtv++;
+        
+      // }else{
+      //     nums_negativos.push(numeroSelect);
+      //     numNtv++;
+        
+      // }
+      // System.out.println("hay " + (numPtv) + " numeros positivos");
+      // System.out.println("hay " + (numNtv) + " numeros negativos");
+      //
+      //
+      //
+      //
+      //
+      //int base = Integer.parseInt(System.console().readLine());
+     // int exponente = Integer.parseInt(System.console().readLine());
+      //int resultado = 1;
+       // for(int i = 0; i < exponente; i++){
+      //    resultado *= base;
+     //   }
+    //  System.out.println(resultado);
 
+      int base = Integer.parseInt(System.console().readLine());
+     int exponente = Integer.parseInt(System.console().readLine());
+//
+    for(int i = exponente; i > 0; i--){
+      System.out.println(base +" x " + exponente + " = " +  Math.pow(base, i));
+    }
+
+      //
+      //
+      //
+      //
+      //
     }
 
     public static void main(String[] args) {

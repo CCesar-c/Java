@@ -2459,35 +2459,44 @@ public class Livro_2_jv_exercicios {
     //
     //
     //
-    int  cont = 0;
-    Stack<Integer> lista = new Stack<Integer>();
-    for (int index = 2; index <= 100; index++) {
-      cont++; 
-      lista.push(index);
-    }
+    // Stack<Integer> nums = new Stack<>() {
+    // };
+    // for (int index = 2; index <= 100; index++) {
+    // boolean esPrimo = true;
+    // for (int i = 2; i <= index / 2; i++) {
+    // if (index % i == 0) {
+    // esPrimo = false;
+    // break;
+    // }
+    // }
+    // if (esPrimo) {
+    // nums.push(index);
+    // }
+    // }
+    // System.out.println(nums);
+    //
+    //
+    //
+    // int num = 0, res = 0;
+    // boolean funcionando = true;
+    // while (funcionando) {
+    // System.out.println("Escribe un numero");
+    // num = Integer.parseInt(System.console().readLine());
 
-    for (int i = 2; i <= cont; i++) {
-
-      System.out.println("Neeew");
-      System.out.println(i);
-      System.out.println("New");
-      for (int y = 1; y <= cont; y++) {
-        System.out.println(y);
-        // int num_idtf = lista.get(y);
-        // if (i % num_idtf == 0) {
-        //   System.out.println("SOn multiplos: " + i + " % " + num_idtf + " == " + 0);
-        //   lista.remove(y);
-        // }
+    // res += num;
+    // if (res >= 10000) {
+    // System.out.println("Su resultado es: " + res);
+    // break;
+    // }
+    // }
+    //
+    //
+    //
+    for (int in = 0; in < 10; in++) {
+      for (int i = 0; i <= 10; i++) {
+        System.out.println(i);
       }
     }
-    
-    System.out.println(lista);
-    //
-    //
-    //
-    //
-    //
-    //
     //
     //
     //

@@ -2516,24 +2516,50 @@ public class Livro_2_jv_exercicios {
     //
     //
     //
-    String n = System.console().readLine();
-    Stack<Integer> numeros = new Stack<>() {
-    };
+    // String n = System.console().readLine();
+    // Stack<Integer> numeros = new Stack<>() {
+    // };
 
-    String[] num_split = n.split("");
+    // String[] num_split = n.split("");
 
-    for (int i = 0; i < num_split.length; i++) {
-      numeros.push(Integer.parseInt(num_split[i]));
-    }
-    List<Integer> ArrayReversed = numeros.reversed();
-    
-    System.out.print("\n");
-    for (int i = 0; i < num_split.length; i++) {
-      System.out.print(ArrayReversed.get(i));
-      
-    }
-    System.out.print("\n");
+    // for (int i = 0; i < num_split.length; i++) {
+    // numeros.push(Integer.parseInt(num_split[i]));
+    // }
+    // List<Integer> ArrayReversed = numeros.reversed();
+
+    // System.out.print("\n");
+    // for (int i = 0; i < num_split.length; i++) {
+    // System.out.print(ArrayReversed.get(i));
+
+    // }
+    // System.out.print("\n");
     //
+    //
+    //
+    // String n = System.console().readLine();
+    // String index = System.console().readLine();
+    // int pos = new Integer("0");
+
+    // String[] spArray = n.split("");
+    // for (int i = 0; i < spArray.length; i++) {
+    //   pos++;
+    //   if (spArray[i].equalsIgnoreCase(index)) {
+    //     System.out.println("Esse numero esta localizado na posicao: " + pos);
+    //     break;
+    //   }
+    // }
+    //
+    //
+    //
+    int num_user = Integer.parseInt(System.console().readLine()), res = 0;
+
+    for (int i = 0; i <= num_user; i++) {
+      if (i % 3 == 0) {
+        res += i;
+        System.out.println(i);
+        System.out.println("Soma de tudo: " + res);
+      }
+    }
     //
     //
     //

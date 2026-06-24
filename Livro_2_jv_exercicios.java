@@ -2327,7 +2327,7 @@ public class Livro_2_jv_exercicios {
     //
     //
     //
-    ///
+    //
     // Stack<Integer> nums_postivos = new Stack<Integer>(){};
     // Stack<Integer> nums_negativos = new Stack<Integer>(){};
     // int numeroSelect = 0;
@@ -2492,26 +2492,31 @@ public class Livro_2_jv_exercicios {
     //
     //
     //
+    int n = Integer.parseInt(System.console().readLine());
+    for (int i = 1; i <= n; i++) {
 
-      for (int x = 0; x <= 10; x++) {
-        for (int y = 0; y <= 1; y++) {
-          if(){
-            if(){
-              
-            }else{
-              
-            }
-          }
-          if(){
-            if(){
-              
-            }else{
-            
-            }
-          }
-        }
+      // 1. Imprimir espacios en blanco para alinear la pirámide
+      for (int j = 1; j <= n - i; j++) {
+        System.out.print(" ");
       }
 
+      // 2. Imprimir la secuencia ascendente (desde 1 hasta i)
+      for (int j = 1; j <= i; j++) {
+        System.out.print(j);
+      }
+
+      // 3. Imprimir la secuencia descendente (desde i-1 hasta 1)
+      for (int j = i - 1; j >= 1; j--) {
+        System.out.print(j);
+      }
+
+      // Salto de línea para pasar a la siguiente fila
+      System.out.println();
+    }
+    //
+    //
+    //
+    //
     //
     //
     //

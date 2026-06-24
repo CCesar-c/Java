@@ -2551,17 +2551,31 @@ public class Livro_2_jv_exercicios {
     //
     //
     //
-    int num_user = Integer.parseInt(System.console().readLine()), res = 0;
+    // int num_user = Integer.parseInt(System.console().readLine()), res = 0;
 
-    for (int i = 0; i <= num_user; i++) {
-      if (i % 3 == 0) {
-        res += i;
-        System.out.println(i);
-        System.out.println("Soma de tudo: " + res);
-      }
-    }
+    // for (int i = 0; i <= num_user; i++) {
+    //   if (i % 3 == 0) {
+    //     res += i;
+    //     System.out.println(i);
+    //     System.out.println("Soma de tudo: " + res);
+    //   }
+    // }
     //
     //
+    //
+    // int num_user = Integer.parseInt(System.console().readLine()), res = 1;
+    // for (int i = 1; i <=  num_user; i++) {
+    //   res *= i;
+    //   System.out.println(res);
+    // }
+    // System.out.println(num_user +"! = " + res);
+    //
+    //
+    //
+    int num_user = Integer.parseInt(System.console().readLine());
+    int num2_user = Integer.parseInt(System.console().readLine());
+    int num3_user = Integer.parseInt(System.console().readLine());
+
     //
     //
   }

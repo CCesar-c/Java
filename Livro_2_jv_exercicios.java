@@ -2492,30 +2492,47 @@ public class Livro_2_jv_exercicios {
     //
     //
     //
-    int n = Integer.parseInt(System.console().readLine());
-    for (int i = 1; i <= n; i++) {
+    // int n = Integer.parseInt(System.console().readLine());
+    // for (int i = 1; i <= n; i++) {
 
-      // 1. Imprimir espacios en blanco para alinear la pirámide
-      for (int j = 1; j <= n - i; j++) {
-        System.out.print(" ");
-      }
+    // // 1. Imprimir espacios en blanco para alinear la pirámide
+    // for (int j = 1; j <= n - i; j++) {
+    // System.out.print(" ");
+    // }
 
-      // 2. Imprimir la secuencia ascendente (desde 1 hasta i)
-      for (int j = 1; j <= i; j++) {
-        System.out.print(j);
-      }
+    // // 2. Imprimir la secuencia ascendente (desde 1 hasta i)
+    // for (int j = 1; j <= i; j++) {
+    // System.out.print(j);
+    // }
 
-      // 3. Imprimir la secuencia descendente (desde i-1 hasta 1)
-      for (int j = i - 1; j >= 1; j--) {
-        System.out.print(j);
-      }
+    // // 3. Imprimir la secuencia descendente (desde i-1 hasta 1)
+    // for (int j = i - 1; j >= 1; j--) {
+    // System.out.print(j);
+    // }
 
-      // Salto de línea para pasar a la siguiente fila
-      System.out.println();
+    // // Salto de línea para pasar a la siguiente fila
+    // System.out.println();
+    // }
+    //
+    //
+    //
+    String n = System.console().readLine();
+    Stack<Integer> numeros = new Stack<>() {
+    };
+
+    String[] num_split = n.split("");
+
+    for (int i = 0; i < num_split.length; i++) {
+      numeros.push(Integer.parseInt(num_split[i]));
     }
-    //
-    //
-    //
+    List<Integer> ArrayReversed = numeros.reversed();
+    
+    System.out.print("\n");
+    for (int i = 0; i < num_split.length; i++) {
+      System.out.print(ArrayReversed.get(i));
+      
+    }
+    System.out.print("\n");
     //
     //
     //

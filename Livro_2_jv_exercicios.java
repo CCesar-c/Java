@@ -2574,7 +2574,13 @@ public class Livro_2_jv_exercicios {
     //
     int num_user = Integer.parseInt(System.console().readLine());
     int num2_user = Integer.parseInt(System.console().readLine());
-    int num3_user = Integer.parseInt(System.console().readLine());
+    for(int i = 0; i <= num_user; i++){
+      if(i % num2_user != 0){
+        System.out.println(i);
+      }
+    }
+
+    
 
     //
     //
